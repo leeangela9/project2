@@ -1,0 +1,310 @@
+body {
+    background-color: rgb(253, 251, 224);
+    margin: 2%;
+    min-width: 490px;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.logobox {
+    border: 2px solid rgb(38, 139, 67);
+    border-radius: 20px;
+    padding: 2px;
+    height: 80px;
+    width: 80px;
+    animation: logomove 2s infinite;
+}
+@keyframes logomove{
+    to {transform: scale(0);}
+}
+.title {
+    font-family: cursive;
+    color: rgba(88, 146, 110, 0.749);
+    margin-bottom: 0;
+}
+.subtitle {
+    margin-top: 0;
+    animation: subtitlemove 2s alternate infinite;
+}
+@keyframes subtitlemove {
+    to {margin-top: -60px;}
+}
+.titlebox {
+    margin-left: 30px;
+}
+.headerbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.s1 {
+    background-image: url(s1.jpg);
+    background-size: 100% 100%;
+    background-color: aliceblue;
+    position: relative;
+
+}
+.s2 {
+    background-image: url(s2.jpeg);
+    background-size: 100% 100% ;
+}
+.s3 {
+    background-image: url(s3.jpeg);
+    background-size: 100% 100%;
+}
+.stage {
+    margin: auto;
+    margin-top: 15px;
+    height: 75%;
+    overflow: hidden;
+    position:relative;
+
+}
+.slidewrapper {
+    width: 300%;
+    height: 100%;
+    animation: slideshow 3s 0.3s infinite;
+}
+
+@keyframes slideshow {
+    0% {margin-left: 0%;}
+    34% {margin-left: -100%;}
+    67% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+.slides {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.box1 {
+    background-image: linear-gradient(0deg, rgba(40, 29, 101, 0.4), rgba(237, 103, 184, 0.3)), url(fade.jpg);
+    background-size: 100% 100%;
+    margin-right: 8%;
+}
+.box2 {
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    background: linear-gradient(45deg, rgba(203, 141, 151, 0.4), rgba(35, 119, 35, 0.3));
+    margin-bottom: 50px;
+}
+.box2 p, .box2 h3 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.box2 h3 {
+    padding-top: 10%;
+}
+.box2, .box1 {
+    width: 42%;
+    height: 410px;
+    float: left;
+    padding: 2px;
+    margin-left: 2%;
+    margin-top: 20px;
+}
+.txt1 {
+    border: 2px solid rgb(191, 229, 174);
+    color: white;
+    position: absolute;
+    left: 80px;
+    margin-top: 4%;
+    width: 20%;
+    text-align: center;
+}
+.txt2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 8%;
+    text-align: left;
+
+}
+.herobox {
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    position: absolute;
+    height: 35%;
+    bottom: 50%;
+}
+.productrow {
+    width: 99%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.productrow div {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.productrow img {
+    width: 70%;
+    height: 80%;
+    margin-top: 8%;
+}
+.productrow h5 {
+    color: rgb(124, 160, 106);
+}
+.title2 {
+    margin-left: 15px;
+}
+.productrow button {
+    background-color: black;
+}
+.bagbuttons {
+    background-color: black;
+    padding: 3% 3% 3% 3%;
+    font-size: 10px;
+}
+.bagbuttons:hover {
+    background-color: rgb(176, 176, 176);
+}
+.productrow a {
+    text-decoration: none;
+    color: white;
+}
+.m1, .m2, .m3, .m4, .m5, .m6 {
+    background-color: rgba(250, 246, 246, 0.5);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    z-index: 9;
+}
+.msgbox {
+    background-color: rgb(190, 220, 189);
+    margin: auto;
+    padding: 5%;
+    position: relative;
+    width: 500px;
+    z-index: 29;
+}
+.m1:target, .m2:target, .m3:target, .m4:target, .m5:target, .m6:target {
+    opacity: 1;
+    pointer-events: all;
+}
+.m1 img, .m2 img, .m3 img, .m4 img, .m5 img, .m6 img  {
+    width: 40%;
+}
+.cbtn {
+    text-decoration: none;
+    background-color:white;
+    color: black;
+    font-size: 15px;
+    padding: 2%;
+}
+.minfo {
+    background-color: rgb(231, 252, 201);
+    padding: 2% 8% 5% 8%;
+    font-size: 14px;
+    margin-top: 10%;
+}
+.mix {
+    float: right;
+    margin-right: 148px;
+}
+.infobox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.ebtn {
+    text-decoration: none;
+    background-color: rgb(231, 252, 201);
+    color: rgb(0, 47, 0);
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+}
+
+/* pop up label */
+.bagbuttons {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+} 
+.bagbuttons .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid black;
+   
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+} 
+.bagbuttons:hover .tooltiptext {
+    visibility: visible;
+}
+footer{
+    background-color: rgb(155, 203, 155);
+    width: 96%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    z-index: auto;
+}
+.f1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+footer div div{
+    width: 25%;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+}
+footer div p {
+    font-size: 12px;
+}
+.connect {
+    color: white;
+    float: right;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 280px;
+    padding: 0;
+}
+.logos img {
+    width: 30px;
+    height: 30px;
+}
+.bot {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+
+}
